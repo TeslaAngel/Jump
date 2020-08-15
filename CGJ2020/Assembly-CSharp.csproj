@@ -55,6 +55,7 @@
     <Compile Include="Assets\Scripts\CameraChasing.cs" />
     <Compile Include="Assets\Scripts\GlobalManager.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\RandomFrameAni.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
