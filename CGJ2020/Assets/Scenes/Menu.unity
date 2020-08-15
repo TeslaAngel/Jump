@@ -381,7 +381,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HorizontalSpeed: 15
   JumpSpeed: 5
-  JumpDurationGap: 1
+  JumpDurationGap: 0.8
 --- !u!95 &273500411
 Animator:
   serializedVersion: 3
