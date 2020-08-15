@@ -1196,7 +1196,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6287667820264776219, guid: de8c3302146201e439112f91de7aad7b, type: 3}
       propertyPath: JumpDurationGap
-      value: 1.2
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de8c3302146201e439112f91de7aad7b, type: 3}
