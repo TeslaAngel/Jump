@@ -11,11 +11,14 @@ public class PlayerController : MonoBehaviour
     public float JumpDurationGap;
     private float JumpDuration;
 
+    private Animator animator;
+
     // Start is called before the first frame update
     void Start()
     {
         PRigidbody2D = GetComponent<Rigidbody2D>();
         JumpDuration = 0;
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -36,6 +39,28 @@ public class PlayerController : MonoBehaviour
             JumpDuration -= Time.deltaTime;
         }
 
+        // Animator Controller
+        if (Input.GetAxis("Horizontal") > 0)
+        {
+            animator.SetInteger("Speed", 1);
+        }
+        if (Input.GetAxis("Horizontal") < 0)
+        {
+            animator.SetInteger("Speed", -1);
+        }
+        if (Input.GetAxis("Horizontal") == 0)
+        {
+            animator.SetInteger("Speed", 0);
+        }
+
+        if (JumpDuration>0)
+        {
+            animator.SetTrigger("Jump");
+        }
+        else
+        {
+            animator.ResetTrigger("Jump");
+        }
 
     }
 }
