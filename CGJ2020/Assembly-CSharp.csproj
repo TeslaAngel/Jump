@@ -52,9 +52,9 @@
     <UnityVersion>2020.1.2f1c1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\GlobalManager.cs" />
-    <Compile Include="Assets\PlayerController.cs" />
     <Compile Include="Assets\Scripts\CameraChasing.cs" />
+    <Compile Include="Assets\Scripts\GlobalManager.cs" />
+    <Compile Include="Assets\Scripts\PlayerController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
